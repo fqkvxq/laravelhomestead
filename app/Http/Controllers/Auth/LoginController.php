@@ -21,7 +21,7 @@ class LoginController extends Controller
     use AuthenticatesUsers;
 
     /**
-     * Where to redirect users after login.
+     * ログイン完了後に遷移するページ
      *
      * @var string
      */
