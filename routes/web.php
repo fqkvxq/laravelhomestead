@@ -17,5 +17,8 @@ Route::get('/', 'ToppageController@index')->name('/');
 // 会員登録・ログイン
 Auth::routes();
 
+// Twitterログイン
+Route::get('/twitter-login','TwitterController@login')->name('twitter-login');
+
 // ログイン後ページ
 Route::get('/home', 'HomeController@index')->name('home');
