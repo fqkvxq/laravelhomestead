@@ -24,7 +24,7 @@ class RegisterController extends Controller
     use RegistersUsers;
 
     /**
-     * Where to redirect users after registration.
+     * 会員登録完了後に遷移するページ
      *
      * @var string
      */
