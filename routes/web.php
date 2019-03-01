@@ -11,11 +11,11 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// トップページの処理
+Route::get('/', 'ToppageController@index')->name('/');
 
 // 会員登録・ログイン
 Auth::routes();
 
+// ログイン後ページ
 Route::get('/home', 'HomeController@index')->name('home');
