@@ -15,6 +15,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+// 会員登録・ログイン
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
