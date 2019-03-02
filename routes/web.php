@@ -22,3 +22,6 @@ Route::get('/twitter-login','TwitterController@login')->name('twitter-login');
 
 // ログイン後ページ
 Route::get('/home', 'HomeController@index')->name('home');
+
+// プロフィールページ
+Route::get('/profile', 'ProfileController@index')->name('home');
